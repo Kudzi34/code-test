@@ -1,10 +1,11 @@
+// Explanation multiplier()
+// 1. multiplier() takes a argument num and returns the value multiplied by 3.
+
 describe("multiplier", () => {
     const multiplier = num => {
         return () => {
             return num * 3;
         };
-
-        // TODO: Complete this function to allow the test to pass
     };
 
     describe("when given a number, a function is returned which when called", () => {
@@ -16,12 +17,14 @@ describe("multiplier", () => {
     });
 });
 
+// Explanation counter()
+// 1. Created a variable number to store values returned when count() is called.
+// 2. When count is called the value stored in num is increased by 1 each time.
+
 describe("counter", () => {
     let number = 0;
     const count = () => {
         return number++;
-
-        // TODO: Complete this function to allow the test to pass
     };
 
     it("returns an increasing number each time it is called", () => {
